@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="32dp"
+                android:paddingTop="4dp"
+                tools:background="#ffaa00">
+
+    <ImageView
+        android:id="@+id/coverLabel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/degree"/>
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/coverLabel"
+        android:layout_toRightOf="@+id/coverLabel"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        tools:text="Wednesday"/>
+
+    <TextView
+        android:id="@+id/artistLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleLabel"
+        android:layout_alignStart="@+id/titleLabel"
+        android:layout_below="@+id/titleLabel"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:textColor="#60ffffff"
+        android:textSize="15dp"
+        tools:text="Micheal Jackson"/>
+</RelativeLayout>
